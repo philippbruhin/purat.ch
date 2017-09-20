@@ -32,9 +32,9 @@ body.site {
 }
 
 header {
-	margin: 20px auto 0 auto;
+	margin: 40px auto 0 auto;
 	svg {
-		width: 500px;
+		width: 450px;
 		height: auto;
 	}
 }
@@ -51,13 +51,13 @@ header {
 
 footer {
 	.main-content {
-		@include font-size(60);
-		@include line-height(60);
+		@include font-size(55);
+		@include line-height(55);
 		margin-bottom: 30px;
 	}
 
 	.dark {
-		background-color: #272B2C;
+		// background-color: #272B2C;
 		color: #9E9E9E;
 		a, a:hover, a:focus {
 			color: #9E9E9E;

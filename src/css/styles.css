@@ -2438,9 +2438,9 @@ body.site {
           flex-direction: column; }
 
 header {
-  margin: 20px auto 0 auto; }
+  margin: 40px auto 0 auto; }
   header svg {
-    width: 500px;
+    width: 450px;
     height: auto; }
 
 .site-content {
@@ -2456,14 +2456,13 @@ header {
   text-transform: uppercase; }
 
 footer .main-content {
-  font-size: 60px;
-  font-size: 3.75rem;
-  line-height: 60px;
-  line-height: 3.75rem;
+  font-size: 55px;
+  font-size: 3.4375rem;
+  line-height: 55px;
+  line-height: 3.4375rem;
   margin-bottom: 30px; }
 
 footer .dark {
-  background-color: #272B2C;
   color: #9E9E9E;
   padding: 50px 0; }
   footer .dark a, footer .dark a:hover, footer .dark a:focus {
