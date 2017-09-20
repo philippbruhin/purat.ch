@@ -24,6 +24,11 @@ html {
 	background-size: cover;
 }
 
+body {
+	@include font-size($base-font-size*0.6);
+	@include line-height($base-line-height*0.6);
+}
+
 body.site {
 	background: transparent;
 	display: flex;
@@ -34,7 +39,8 @@ body.site {
 header {
 	margin: 40px auto 0 auto;
 	svg {
-		width: 450px;
+		width: 100%;
+		max-width: 450px;
 		height: auto;
 	}
 }
@@ -44,15 +50,15 @@ header {
 }
 
 .top-content {
-	@include font-size($base-font-size*1.8);
-	@include line-height($base-font-size*1.8);
+	@include font-size($base-font-size);
+	@include line-height($base-font-size);
 	text-transform: uppercase;
 }
 
 footer {
 	.main-content {
-		@include font-size(55);
-		@include line-height(55);
+		@include font-size(25);
+		@include line-height(25);
 		margin-bottom: 30px;
 	}
 
@@ -66,6 +72,57 @@ footer {
 		padding: 50px 0;
 		p {
 			margin: 0;
+		}
+	}
+}
+
+@include breakpoint(m) {
+	body {
+		@include font-size($base-font-size*0.9);
+		@include line-height($base-line-height*0.9);
+	}
+	.top-content {
+		@include font-size($base-font-size*1.6);
+		@include line-height($base-font-size*1.6);
+	}
+	footer {
+		.main-content {
+			@include font-size(35);
+			@include line-height(35);
+		}
+	}
+}
+
+@include breakpoint(l) {
+	body {
+		@include font-size($base-font-size);
+		@include line-height($base-line-height);
+	}
+	.top-content {
+		@include font-size($base-font-size*1.7);
+		@include line-height($base-font-size*1.7);
+	}
+	footer {
+		.main-content {
+			@include font-size(50);
+			@include line-height(50);
+		}
+	}
+}
+
+@include breakpoint(xl) {
+	body {
+		@include font-size($base-font-size);
+		@include line-height($base-line-height);
+	}
+	.top-content {
+		@include font-size($base-font-size*1.8);
+		@include line-height($base-font-size*1.8);
+	}
+	footer {
+		.main-content {
+			@include font-size(55);
+			@include line-height(55);
 		}
 	}
 }

@@ -2426,6 +2426,12 @@ html {
   background: url(../img/background.jpg) no-repeat center center fixed;
   background-size: cover; }
 
+body {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 21.6px;
+  line-height: 1.35rem; }
+
 body.site {
   background: transparent;
   display: -webkit-box;
@@ -2440,7 +2446,8 @@ body.site {
 header {
   margin: 40px auto 0 auto; }
   header svg {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: auto; }
 
 .site-content {
@@ -2449,17 +2456,17 @@ header {
           flex: 1; }
 
 .top-content {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 36px;
-  line-height: 2.25rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 20px;
+  line-height: 1.25rem;
   text-transform: uppercase; }
 
 footer .main-content {
-  font-size: 55px;
-  font-size: 3.4375rem;
-  line-height: 55px;
-  line-height: 3.4375rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
   margin-bottom: 30px; }
 
 footer .dark {
@@ -2470,5 +2477,56 @@ footer .dark {
     text-decoration: none; }
   footer .dark p {
     margin: 0; }
+
+@media only screen and (min-width: 740px) {
+  body {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 32.4px;
+    line-height: 2.025rem; }
+  .top-content {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 32px;
+    line-height: 2rem; }
+  footer .main-content {
+    font-size: 35px;
+    font-size: 2.1875rem;
+    line-height: 35px;
+    line-height: 2.1875rem; } }
+
+@media only screen and (min-width: 980px) {
+  body {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 36px;
+    line-height: 2.25rem; }
+  .top-content {
+    font-size: 34px;
+    font-size: 2.125rem;
+    line-height: 34px;
+    line-height: 2.125rem; }
+  footer .main-content {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 50px;
+    line-height: 3.125rem; } }
+
+@media only screen and (min-width: 1140px) {
+  body {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 36px;
+    line-height: 2.25rem; }
+  .top-content {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 36px;
+    line-height: 2.25rem; }
+  footer .main-content {
+    font-size: 55px;
+    font-size: 3.4375rem;
+    line-height: 55px;
+    line-height: 3.4375rem; } }
 
 /*# sourceMappingURL=styles.css.map */
