@@ -2450,7 +2450,7 @@ header {
     max-width: 450px;
     height: auto; }
 
-.site-content {
+.site-content, .main-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
@@ -2528,5 +2528,17 @@ footer .dark {
     font-size: 3.4375rem;
     line-height: 55px;
     line-height: 3.4375rem; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html, body {
+    height: 100%;
+    margin: 0; }
+  .main-container {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -380px; }
+  footer {
+    height: 380px; } }
 
 /*# sourceMappingURL=styles.css.map */
