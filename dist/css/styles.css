@@ -2474,7 +2474,7 @@ footer .dark {
   padding: 50px 0; }
   footer .dark a, footer .dark a:hover, footer .dark a:focus {
     color: #9E9E9E;
-    text-decoration: none; }
+    text-decoration: underline; }
   footer .dark p {
     margin: 0; }
 
